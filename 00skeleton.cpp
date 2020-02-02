@@ -7,7 +7,7 @@
 
 #include <GLXW/glxw.h>
 #include <GLFW/glfw3.h>
-
+#include <opencv2/opencv.hpp>
 #include <iostream>
 
 int main() {
@@ -46,7 +46,7 @@ int main() {
 
     while(!glfwWindowShouldClose(window)) {
         glfwPollEvents();
-
+        cv::Mat matImage;
         // drawing etc goes here
         // ...
         
