@@ -7,7 +7,6 @@
 
 #include <GLXW/glxw.h>
 #include <GLFW/glfw3.h>
-#include <opencv2/opencv.hpp>
 #include <iostream>
 
 int main() {
@@ -31,7 +30,7 @@ int main() {
         glfwTerminate();
         return 1;
     }
-    
+
     glfwMakeContextCurrent(window);
 
     if(glxwInit()) {
@@ -46,12 +45,12 @@ int main() {
 
     while(!glfwWindowShouldClose(window)) {
         glfwPollEvents();
-        cv::Mat matImage;
+        // cv::Mat matImage;
         // drawing etc goes here
         // ...
-        
+
         // To remove the corruption
-        glClear(GL_COLOR_BUFFER_BIT);
+        // glClear(GL_COLOR_BUFFER_BIT);
 
         // check for errors
         GLenum error = glGetError();
